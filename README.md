@@ -1,2 +1,2 @@
 # DexHook
-Xposed module for hooking dalvik.system.BaseDexClassLoader and saving dynamically loaded dex files
+Xposed module for hooking dalvik.system.BaseDexClassLoader and capturing dynamically loaded dex files. Usage: its a single freaking class, read the source.
