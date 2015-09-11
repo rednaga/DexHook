@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Enter the package name for the classes.dex to dump. Requires reboot for settings to take effect.\n\nDefault behavior is to dump the dex files for all applications."
+            android:text="Enter the package name for the classes.dex to dump. Requires reboot for settings to take effect.\n\nKeep this empty to dump the dex files for all applications."
             android:id="@+id/textView"
             android:layout_weight="0.06" />
 
@@ -38,14 +38,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/packageNameInput"
         android:inputType="text"
-        android:hint="com.totes.legit"
         android:layout_below="@+id/tableLayout"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/curPackageTextView"
+        android:id="@+id/packageNameTextView"
         android:layout_weight="0.06"
         android:layout_below="@+id/button"
         android:layout_alignParentStart="true"
@@ -54,7 +53,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please enter the path to save the dumped dex files to. The path must exist and be writeable.\n\nDefault is /data/local/tmp/dumps\n"
+        android:text="Please enter the path to save the dumped dex files to. The path must exist and be writeable."
         android:id="@+id/pathTextView"
         android:layout_below="@+id/packageNameInput"
         android:layout_alignParentStart="true" />
@@ -71,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dirPathTextView"
-        android:layout_below="@+id/curPackageTextView"
+        android:layout_below="@+id/packageNameTextView"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
